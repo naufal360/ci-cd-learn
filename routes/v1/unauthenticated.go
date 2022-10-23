@@ -19,3 +19,10 @@ func UserLogin(routes *echo.Echo, api *controller.UserController) {
 		user.POST("/login", api.LoginUser)
 	}
 }
+
+func GetHello(routes *echo.Echo) {
+	user := routes.Group("/v1")
+	{
+		user.GET("/hello", controller.HelloTest)
+	}
+}

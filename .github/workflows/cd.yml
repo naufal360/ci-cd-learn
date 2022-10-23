@@ -39,7 +39,6 @@ jobs:
           host: ${{ secrets.HOST }}
           user: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
-          port: 22
           command: |
             docker compose down
             docker image rm naufal360/docker-go-praktikum:v1
