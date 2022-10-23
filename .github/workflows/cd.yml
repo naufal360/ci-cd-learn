@@ -34,7 +34,7 @@ jobs:
           tags: naufal360/docker-go-praktikum:v1
       
       - name: update gcp
-        uses: bk-amnadhil/ssh-action@master
+        uses: fifsky/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
           user: ${{ secrets.USERNAME }}
