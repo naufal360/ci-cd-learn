@@ -18,6 +18,9 @@ func Init() *echo.Echo {
 	// set logger
 	mid.LogMiddleware(routes)
 
+	// Test response
+	v1.GetHello(routes)
+
 	// unauthenticated route
 	v1.UserRouteUnathenticated(routes, controlAPI)
 	v1.UserLogin(routes, controlAPI)
