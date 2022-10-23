@@ -40,6 +40,6 @@ jobs:
           user: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           command: |
-            docker compose down
-            docker image rm naufal360/docker-go-praktikum:v1
-            docker compose up -d
+            sudo docker compose down
+            sudo docker image rm naufal360/docker-go-praktikum:v1
+            sudo docker compose up -d
