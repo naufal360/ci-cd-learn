@@ -9,7 +9,7 @@ import (
 
 func HelloTest(c echo.Context) error {
 	return c.JSON(http.StatusOK, map[string]interface{}{
-		"response": "hello naufal",
+		"response": "hello ahmad naufal fadhil",
 		"time":     time.Now(),
 	})
 }
